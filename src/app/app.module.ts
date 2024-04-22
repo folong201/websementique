@@ -5,16 +5,20 @@ import { HttpClientModule } from '@angular/common/http'; // Importez HttpClientM
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddfoodComponent } from './components/addfood/addfood.component';
+import { FormsModule } from '@angular/forms';
+import { FoodcompoComponent } from './components/foodcompo/foodcompo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddfoodComponent
+    AddfoodComponent,
+    FoodcompoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule // Ajoutez HttpClientModule ici
+    HttpClientModule ,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

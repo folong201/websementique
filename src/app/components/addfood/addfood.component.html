@@ -1,1 +1,240 @@
-<p>addfood works!</p>
+<!-- Modal toggle -->
+<button data-modal-target="createFoodModal" data-modal-toggle="createFoodModal"
+  class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+  type="button">
+  Create Food
+</button>
+
+<!-- Create Food modal -->
+<div id="createFoodModal" tabindex="-1" aria-hidden="true"
+  class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative w-full max-w-2xl max-h-full">
+    <!-- Modal content -->
+    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <!-- Modal header -->
+      <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          Create New Food
+        </h3>
+        <button type="button"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+          data-modal-hide="createFoodModal">
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="p-6 space-y-6">
+        <form (ngSubmit)="createFood()">
+          <div class="mb-4">
+            <label for="foodName" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Food Name</label>
+            <input type="text" id="foodName" [(ngModel)]="foodName" name="foodName"
+              class="mt-1 p-2 border rounded-md w-full" placeholder="Enter food name" required>
+          </div>
+          <div class="mb-4">
+            <label for="foodImage" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Food Image
+              URL</label>
+            <input type="text" id="foodImage" [(ngModel)]="foodImage" name="foodImage"
+              class="mt-1 p-2 border rounded-md w-full" placeholder="Enter food image URL" required>
+          </div>
+          <div class="flex items-center justify-end space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+            <button type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Create</button>
+            <button type="button" data-modal-hide="createFoodModal"
+              class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="flex w-full">
+  <div class="w-1/2">
+    <p>Class/sous class</p>
+    <div class="flex items-center justify-center">
+      <div class="flex items-center mb-4">
+        <input checked id="default-radio-1" type="radio" value="class" name="foodType" (change)="onRadioChange($event)"
+          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Class</label>
+      </div>
+      <div class="flex items-center">
+        <input id="default-radio-2" type="radio" value="subclass" name="foodType" (change)="onRadioChange($event)"
+          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sous
+          class</label>
+      </div>
+    </div>
+
+    <p>Selected Type: {{ selectedType }}</p>
+
+
+    <!-- tableaux liste des class -->
+    <div class="flex flex-col">
+      <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+          <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Name
+                  </th>
+                  <th scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Uri
+                  </th>
+                  <th scope="col"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    description
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr *ngFor="let element of classes; let i=index">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="text-sm text-gray-900">{{ selectedType=="class"?getVal( element.class.value):getVal(
+                      element.subclass.value) }}</div>
+
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="text-sm text-gray-900">{{
+                      selectedType=="class"?element.class.value:element.subclass.value}}
+                    </div>
+                    <div class="text-sm text-gray-500">{{ element.value }}</div>
+
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span
+                      class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                      {{ element.value }}
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="flex flex-col">
+      <div class="flex items-center justify-center mt-8">
+        <div class="flex items-center mb-4">
+          <input checked id="default-radio-1" type="radio" value="name" name="queryinput" (change)="queryparamchange()"
+            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Name</label>
+        </div>
+        <div class="flex items-center">
+          <input id="default-radio-2" type="radio" value="complete" name="queryinput" (change)="queryparamchange()"
+            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+            Complete Query</label>
+        </div>
+      </div>
+
+      <p>Query By : {{ queryinput }}</p>
+      <form class="w-full m-5 p-8" (ngSubmit)="exeQuery()">
+        <div class="flex">
+          <div class="relative w-full">
+            <input type="search" id="search-dropdown" [(ngModel)]="queryval" name="queryval"
+              class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              placeholder="Search foodName,component ..." required />
+            <button type="submit"
+              class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="container-fluid">
+        <h2>Food Request Result</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Food</th>
+              <th>Name</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="queryresult && queryresult.results.bindings.length > 0">
+              <td>{{ queryresult.results.bindings[0].food.value }}</td>
+              <td>{{ queryresult.results.bindings[0].name.value }}</td>
+              <td>
+                <img src="{{ queryresult.results.bindings[0].image.value }}"
+                  alt="{{ queryresult.results.bindings[0].name.value }} Image">
+              </td>
+            </tr>
+            <tr *ngIf="!queryresult || queryresult.results.bindings.length === 0">
+              <td colspan="3">No results found.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- tableaux liste Plats-->
+  <div class="w-1/2">
+    <h1>Liste des Plats existant</h1>
+    <div class="flex flex-col">
+      <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+          <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+
+
+            <div class="relative overflow-x-auto">
+              <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" class="px-6 py-3">
+                      name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                      uri
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                      image
+                    </th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                    *ngFor="let element of foodList; let i=index">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                      {{ element.name.value }}
+                    </th>
+                    <td class="px-6 py-4">
+                      {{ selectedType == 'class' ? element.food.value :
+                      element.food.value }}
+                    </td>
+                    <td class="px-6 py-4">
+                      <img src="{{ element.image.value }}" alt="" width="100" class="max-h-14">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
