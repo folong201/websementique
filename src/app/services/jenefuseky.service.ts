@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class JenefusekyService {
-  jenaFusekiUrl = 'http://localhost:3030/foodonto/query';
+  jenaFusekiUrl = 'http://localhost:3030/folongemerson/query';
   constructor(private http: HttpClient) { }
   public getAllFood() {
     return this.executeQuery(completfoodList);
@@ -30,7 +30,7 @@ export class JenefusekyService {
   public getFoodList() {
     return this.executeQuery(completfoodList);
   }
-  public getComposition(){
+  public getComposition() {
     return this.executeQuery(compositionquery);
   }
 
@@ -58,6 +58,22 @@ export class JenefusekyService {
     }`);
   }
 
+  public getFoodComponentByName(name:string){ 
+
+
+
+    return this.executeQuery(`
+     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+      PREFIX fo: <http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#>
+      SELECT ?component ?ingredient
+      WHERE {
+        ?food rdf:type fo:Food ;
+            fo:name "${name}" ;
+            fo:hasComponent ?component ;
+            fo:hasIngradient ?ingredient .
+      }`)
+  }
+
   public completeQuery(query: string) {
     return this.executeQuery(query);
   }
@@ -79,7 +95,7 @@ export class JenefusekyService {
     }
   `;
 
-    return this.http.post("http://localhost:3030/foodonto/update", query, { headers });
+    return this.http.post("http://localhost:3030/folongemerson/update", query, { headers });
   }
 
 
@@ -96,7 +112,7 @@ export class JenefusekyService {
 //pour recuperer les assersions
 const assertionquery = `
           PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-          PREFIX fo: <http://localhost:3030/foodonto#>
+          PREFIX fo: <http://localhost:3030/folongemerson#>
 
           SELECT ?subject ?predicate ?object
           WHERE {
@@ -165,3 +181,13 @@ WHERE {
        fo:hasIngradient ?ingradient .
 }
 `;
+const foodComponentandingredient = `
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX fo: <http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#>
+SELECT ?component ?ingredient
+WHERE {
+  ?food rdf:type fo:Food ;
+       fo:name "${name}" ;
+       fo:hasComponent ?component ;
+       fo:hasIngradient ?ingredient .
+}`

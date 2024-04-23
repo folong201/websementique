@@ -1,0 +1,1147 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9/"
+     xml:base="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9">
+        <rdfs:comment>folong emerson</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#hasIngradient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#hasIngradient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#isFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#isFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#image -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#image">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Acorn_squash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Acorn_squash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#All-purpose_flour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#All-purpose_flour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Antioxidants -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Antioxidants">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bay_leaf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bay_leaf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bay_leaves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bay_leaves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Beef -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Beef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_and_white_pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_and_white_pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bouille -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bouille">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#All-purpose_flour"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Milk"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Sugar"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vanilla_extract"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mali/foutou-igname.jpg</untitled-ontology-9:image>
+        <untitled-ontology-9:name>Bouille</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Butter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Butter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cabbage_or_cole_slaw_or_spinach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cabbage_or_cole_slaw_or_spinach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cameroon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cameroon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Canned_tomatoes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Canned_tomatoes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cayenne_pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cayenne_pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cedric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cedric"/>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Chicken_breasts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Chicken_breasts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_pepper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cider_vinegar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cider_vinegar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Congo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Congo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Couscous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Couscous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Butter"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_parsley"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Golden_raisins"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ground_cumin"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lemon_juice"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Olive_oil"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Pine_nuts"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Shallot"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vegetable_broth"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Whole_wheat_couscous"/>
+        <untitled-ontology-9:image>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Mali/Couscous-735x542.jpg.webp</untitled-ontology-9:image>
+        <untitled-ontology-9:name>CousCous</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Curry_powder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Curry_powder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dates_or_tamarind -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dates_or_tamarind">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Diced_tomatoes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Diced_tomatoes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dijon_or_stone-ground_mustard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dijon_or_stone-ground_mustard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Djablani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Djablani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_ginger"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ice_cubes"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lemon"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Mint_leaves"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Sugar"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:image>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Mali/Djablani-735x542.jpg.webp</untitled-ontology-9:image>
+        <untitled-ontology-9:name>djablani</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dried_dates -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dried_dates">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dried_thyme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dried_thyme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Enzymes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Enzymes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Antioxidants"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dates_or_tamarind"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_powder"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_spices"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_tomatoes"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Garlic"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lamb"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Onions"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Shea_butter_or_oil"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Soumbala_/_dawadawa"/>
+        <untitled-ontology-9:image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mali/foutou-igname.jpg</untitled-ontology-9:image>
+        <untitled-ontology-9:name>fakoye</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_powder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_powder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_spice_blend -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_spice_blend">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_spices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_spices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_ginger"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lemon"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Folong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Folong"/>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_ginger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_ginger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_parsley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_parsley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_tomatoes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_tomatoes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Garlic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Garlic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ginger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ginger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Golden_raisins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Golden_raisins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_chilis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_chilis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ground_cumin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ground_cumin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Hot_pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Hot_pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ice_cubes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ice_cubes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Jalapeno_pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Jalapeno_pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Jollof_Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Jollof_Rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Antioxidants"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bay_leaves"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_and_white_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Curry_powder"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dried_thyme"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Hot_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Oil"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Red_onions"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Red_peppers"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Rice"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Stock"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tomato_paste"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tomatoes"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Unsalted_butter"/>
+        <untitled-ontology-9:image>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Mali/Jollof-Rice-735x542.jpg.webp</untitled-ontology-9:image>
+        <untitled-ontology-9:name>jollof-rice</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#La_Capitaine_Sangha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#La_Capitaine_Sangha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Antioxidants"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Canned_tomatoes"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fresh_tomatoes"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Garlic"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ginger"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_chilis"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Nile_perch_or_any_solid_white_fish"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Onions"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Parsley"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Thyme"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vegetable_oil"/>
+        <untitled-ontology-9:image>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Mali/La-Capitaine-sangha-735x557.jpeg%20(1).webp</untitled-ontology-9:image>
+        <untitled-ontology-9:name>La-Capitaine-sangha</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Labadja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Labadja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Antioxidants"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Beef"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Butter"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dried_dates"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fakoye_spice_blend"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Garlic"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Onions"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Rice"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt"/>
+        <untitled-ontology-9:image>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Mali/foutou-igname.jpg</untitled-ontology-9:image>
+        <untitled-ontology-9:name>Labadja</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lamb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lamb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lemon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lemon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lemon_juice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lemon_juice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Mali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Mali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Malian_Tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Malian_Tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Green_tea"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Mint_leaves"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Sugar"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:image>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Mali/Malian-Tea-720x540.jpeg.webp</untitled-ontology-9:image>
+        <untitled-ontology-9:name>Malia_tea</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Mint_leaves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Mint_leaves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#NIngeria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#NIngeria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Nile_perch_or_any_solid_white_fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Nile_perch_or_any_solid_white_fish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Olive_oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Olive_oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Onions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Onions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Parsley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Parsley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Peanut_or_vegetable_oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Peanut_or_vegetable_oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Phytonutrients -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Phytonutrients">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Pine_nuts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Pine_nuts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Poulet_Yassa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Poulet_Yassa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Antioxidants"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bay_leaf"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cayenne_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Chicken_breasts"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cider_vinegar"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Garlic"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Jalapeno_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Lemon_juice"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Peanut_or_vegetable_oil"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Yellow_onions"/>
+        <untitled-ontology-9:image>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Mali/Poulet-yassa-735x542.jpg.webp</untitled-ontology-9:image>
+        <untitled-ontology-9:name>Poulet_Yassa</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Red_onions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Red_onions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Red_peppers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Red_peppers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Senegal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Senegal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Shallot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Shallot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Shea_butter_or_oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Shea_butter_or_oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Smooth_peanut_butte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Smooth_peanut_butte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Stock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Stock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Sugar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Sugar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Thyme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Thyme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tiguadege_Na -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tiguadege_Na">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Food"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Antioxidants"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fats"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Fiber"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Acorn_squash"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Bay_leaves"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Black_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cabbage_or_cole_slaw_or_spinach"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Cayenne_pepper"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Diced_tomatoes"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Garlic"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Oil"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Onions"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Salt"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Smooth_peanut_butte"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tomato_paste"/>
+        <untitled-ontology-9:hasIngradient rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vegetable_broth"/>
+        <untitled-ontology-9:image>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Mali/Tiguadege-Na-735x597.jpg.webp</untitled-ontology-9:image>
+        <untitled-ontology-9:name>Tiguadege_na</untitled-ontology-9:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tomato_paste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tomato_paste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tomatoes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Tomatoes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Unsalted_butter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Unsalted_butter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vanilla_extract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vanilla_extract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vegetable_broth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vegetable_broth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Carbohydrates"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Minerals"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Proteins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins"/>
+        <untitled-ontology-9:hasComponent rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vegetable_oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vegetable_oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Vitamins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Whole_wheat_couscous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Whole_wheat_couscous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Yellow_onions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Yellow_onions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Soumbala_/_dawadawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Soumbala_/_dawadawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/folong201/ontologies/2024/3/untitled-ontology-9#Ingredient"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
